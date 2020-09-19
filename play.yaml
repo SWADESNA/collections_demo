@@ -1,5 +1,6 @@
 - name: GATHER FACTS FROM JUNIPER ROUTER
-  hosts: juniper
+  #hosts: juniper
+  hosts: all
   gather_facts: no
   collections:   # Define collections to search
     - junipernetworks.junos
@@ -15,7 +16,8 @@
 
 
 - name: GATHER FACTS FROM F5 
-  hosts: f5
+  #hosts: f5
+  hosts: all
   connection: local
   gather_facts: no
 
